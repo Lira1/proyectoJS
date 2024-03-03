@@ -75,3 +75,71 @@ function tarea5(){
         
     }
 }
+
+
+
+function add7(numero){
+    if(numero == null)
+        alert("Operacion cancelada");
+    else if(numero !== ''){
+    numero = parseFloat(numero);
+    console.log(numero);
+    console.log(typeof numero);
+    if(!isNaN(numero))
+        alert( 7 + +numero);
+    else
+        alert("Ingrese un numero valido");
+    }
+    else 
+        alert("La cadena esta vacia");
+}
+
+function multi(){
+    let m1;
+    let m2;
+    m1 = prompt("Ingresa el primero numero a multiplicar");
+    if(m1 == null || isNaN(m1))
+        alert("Numero no valido, se cancela la operacion");
+    else {
+        m2 = prompt("Ingresa el segundo numero a multiplicar");
+        if(m2 == null || isNaN(m2))
+            alert("Numero no valido, se cancela la operacion");
+        else
+            alert(m1 + " * " + m2 + " = " + multiply(m1, m2));
+    }
+}
+
+function multiply(factor1, factor2){
+    return factor1*factor2;
+}
+function capital(){
+    let palabra = prompt("Ingresa una palabra: ");
+    alert(capitalize(palabra));
+}
+function capitalize(cadena){
+    if(cadena!=null){
+    if(cadena.length>0)
+        cadena = cadena.toLowerCase();
+        return cadena.charAt(0).toUpperCase() + cadena.slice(1);
+    }
+    else return "Cadena Vacia"
+}
+
+function last(){
+    let cadena = prompt("Ingresa una cadena de texto: ")
+    alert(lastletter(cadena));
+}
+
+function lastletter(cadena){
+    let ultimaLetra;
+    if (cadena != null){
+        if(cadena.length>0)
+            ultimaLetra=cadena.charAt(cadena.length-1)
+        else
+            ultimaLetra = "Cadena vacia"
+        console.log(ultimaLetra);
+    return ultimaLetra;
+    }
+    else
+        return "cadena vacia";
+}
