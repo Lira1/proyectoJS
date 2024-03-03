@@ -48,3 +48,30 @@ function tarea4(){
         Una tercer solucion es:
         alert(+a + +b);*/
 }
+
+function tarea5(){
+    let userName;
+    let userNameLogin = false;
+    let password;
+
+    userName = prompt("Ingresa el nombre de usuario");
+    if(userName === "")
+        alert("Proceso fue cancelado");
+    else if(userName !== "Admin")
+        alert("No te conozco");
+    else{
+        alert("Hola " +userName);
+        userNameLogin = true;
+    }
+
+    if(userNameLogin){
+        password = prompt("Ingresa el Password");
+        if (password === "")
+            alert("Cancelado");
+        else if (password==="TheMaster")
+            alert("Bienvenido")
+        else
+            alert("Password incorrecto")
+        
+    }
+}
