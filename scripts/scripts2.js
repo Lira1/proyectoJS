@@ -24,7 +24,18 @@ container.appendChild(encabezado3);
 const divHijo = document.createElement('div');
 divHijo.classList.add('div-hijo');
 divHijo.style.cssText= 'border: 2px solid black; background-color: pink';
-divHijo.textContent = "hla";
+
+const encabezado = document.createElement('h1');
+encabezado.classList.add('encabezado1');
+encabezado.textContent =  "Estoy en un div!!";
+const tagp2 = document.createElement('p');
+tagp2.classList.add('parrafo');
+tagp2.textContent = "Yo tambien!!!";
+divHijo.appendChild(encabezado);
+
+
+divHijo.appendChild(tagp2);
+
 container.appendChild(divHijo);
 
 /*
