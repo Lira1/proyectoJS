@@ -14,7 +14,7 @@ tagP.style.color = 'red';
 
 container.appendChild(tagP);
 
-const encabezado3 = document.createElement('h3');
+const encabezado3 = document.createElement('h3')
 encabezado3.classList.add('encabezado');
 encabezado3.textContent = '¡Soy un h3 azul!';
 encabezado3.style.color = 'blue';
